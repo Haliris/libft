@@ -1,7 +1,8 @@
-a.out
-.vscode
-test
-./output
-.gch
-main.c
-WIP/*
+**/*.out
+**/*.a
+**/*.o
+**/.vscode
+**/.gch
+**/main
+WIP/**
+**/*.swp
