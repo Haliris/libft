@@ -13,14 +13,12 @@ static int	ft_strlen(char *str)
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*joined;
-	int	joined_len;
 	int	i;
 	int	parse_index;
 
 	i = 0;
 	parse_index = 0;
-	joined_len = ft_strlen(s1) + ft_strlen(s2);
-	joined = malloc (sizeof(char) * joined_len + 1);
+	joined = malloc (sizeof(char) * ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!joined)
 		return (NULL);
 	while (s1[parse_index])
