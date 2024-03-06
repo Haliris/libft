@@ -1,13 +1,13 @@
 #include <stdlib.h>
 
-int	check_sep(char c, char sep)
+static int	check_sep(char c, char sep)
 {
 	if (c == sep || c == '\0')
 		return (1);
 	return (0);
 }
 
-int	count_words(char const *str, char sep)
+static int	count_words(char const *str, char sep)
 {
 	int	i;
 	int	words;
@@ -23,7 +23,7 @@ int	count_words(char const *str, char sep)
 	return (words);
 }
 
-char	*build_str(char *str, int index, int word_index)
+static char	*build_str(char *str, int index, int word_index)
 {
 	char	*split_str;
 	int	i;

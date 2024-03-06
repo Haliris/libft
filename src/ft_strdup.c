@@ -10,7 +10,7 @@ static int	ft_strlen(const char *str)
 	return (i);
 }
 
-char	*ft_strdup(const char s*)
+char	*ft_strdup(const char *s)
 {
 	int	i;
 	int	s_len;
