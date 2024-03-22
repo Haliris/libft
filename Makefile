@@ -40,11 +40,5 @@ SRC = ${addprefix ${SRC_DIR}, ${SRC_FILES}}
 
 OBJS = ${SRC:.c=.o}
 
-TARGET = main
-
 %.o: %.c
 	${CC} ${CFLAGS} -I ${INCLUDES_DIR} -c $< -o ${<:.c=.o}
-
-${TARGET}: main.c ${LIB}
-	${CC} ${CFLAGS} main.c -L. -lft -lbsd -o ${TARGET}
-
