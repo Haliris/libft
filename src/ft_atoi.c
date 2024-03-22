@@ -1,8 +1,20 @@
-int     ft_atoi(const char *nptr)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/22 19:28:31 by jteissie          #+#    #+#             */
+/*   Updated: 2024/03/22 19:29:13 by jteissie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int    ft_atoi(const char *nptr)
 {
-    int i;
-    int result;
-    int minus;
+    int   i;
+    int   result;
+    int   minus;
 
     i = 0;
     result = 0;
