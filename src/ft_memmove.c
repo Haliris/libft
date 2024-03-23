@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/23 16:35:42 by jteissie          #+#    #+#             */
+/*   Updated: 2024/03/23 16:36:56 by jteissie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	int		i;
+	int			i;
 	const int	*from;
-	int		*to;
-	
+	int			*to;
+
 	from = src;
 	to = dest;
 	if (to > from)
@@ -24,5 +36,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			i++;
 		}
 	}
-	return (dest);	
+	return (dest);
 }
