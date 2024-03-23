@@ -1,4 +1,14 @@
-#include <stdlib.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/23 17:14:10 by jteissie          #+#    #+#             */
+/*   Updated: 2024/03/23 17:34:07 by jteissie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 static int	check_sep(char c, char sep)
 {
@@ -16,8 +26,9 @@ static int	count_words(char const *str, char sep)
 	words = 0;
 	while (str[i])
 	{
-		if (check_sep(str[i], sep) && !check_sep(str[i - 1], sep)) //probleme pour debut string
-				words++;
+		if (check_sep(str[i], sep)
+			&& !check_sep(str[i - 1], sep))
+			words++;
 		i++;
 	}
 	return (words);
@@ -26,13 +37,13 @@ static int	count_words(char const *str, char sep)
 static char	*build_str(char *str, int index, int word_index)
 {
 	char	*split_str;
-	int	i;
+	int		i;
 
 	i = 0;
 	split_str = malloc(sizeof(char) * word_index + 1);
 	if (!split_str)
 		return (NULL);
-	while (word_index > 0) //pas sur
+	while (word_index > 0)
 	{
 		split_str[i] = str[index - word_index];
 		i++;
@@ -42,20 +53,15 @@ static char	*build_str(char *str, int index, int word_index)
 	return (split_str);
 }
 
-char	**ft_split(char *s, char c)
+static char	**assemble(char **split, char *s, char c)
 {
 	int	i;
-	char	**split;
-	int	words;
 	int	word_index;
 	int	split_index;
 
 	i = 0;
-	words = 0;
 	word_index = 0;
 	split_index = 0;
-	words = count_words(s, c);
-	split = malloc(sizeof(char *) * words + 1);
 	while (s[i])
 	{
 		while (!check_sep(s[i], c))
@@ -73,4 +79,17 @@ char	**ft_split(char *s, char c)
 	}
 	split[split_index] = NULL;
 	return (split);
+}
+
+char	**ft_split(char *s, char c)
+{
+	char	**split;
+	int		words;
+
+	words = 0;
+	words = count_words(s, c);
+	split = malloc(sizeof(char *) * words + 1);
+	if (!split)
+		return (NULL);
+	return (assemble(split, s, c));
 }
