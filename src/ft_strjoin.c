@@ -1,4 +1,14 @@
-#include <stdlib.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/23 17:35:02 by jteissie          #+#    #+#             */
+/*   Updated: 2024/03/23 17:35:39 by jteissie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 static int	ft_strlen(char *str)
 {
@@ -13,8 +23,8 @@ static int	ft_strlen(char *str)
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*joined;
-	int	i;
-	int	parse_index;
+	int		i;
+	int		parse_index;
 
 	i = 0;
 	parse_index = 0;
