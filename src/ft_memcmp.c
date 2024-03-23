@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/23 16:43:43 by jteissie          #+#    #+#             */
+/*   Updated: 2024/03/23 16:44:10 by jteissie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned int	i;
+	unsigned int		i;
 	unsigned const char	*str_1;
 	unsigned const char	*str_2;
 
