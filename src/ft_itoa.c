@@ -1,4 +1,14 @@
-#include <stdlib.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/23 17:10:20 by jteissie          #+#    #+#             */
+/*   Updated: 2024/03/23 17:12:02 by jteissie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 void	ft_putnbr_array(char *str, int nb, int *index)
 {
@@ -15,8 +25,8 @@ void	ft_putnbr_array(char *str, int nb, int *index)
 	{
 		ft_putnbr_array(str, number / 10, index);
 		str[*index] = number % 10 + '0';
-	       *index = *index + 1;
-       		return ;	       
+		*index = *index + 1;
+		return ;
 	}
 	str[*index] = number + '0';
 	*index = *index + 1;
@@ -25,10 +35,10 @@ void	ft_putnbr_array(char *str, int nb, int *index)
 
 char	*ft_itoa(int n)
 {
-	int	digits;
+	int		digits;
 	char	*string;
-	int	digits_count;
-	int	i;
+	int		digits_count;
+	int		i;
 
 	digits = n;
 	digits_count = 0;
