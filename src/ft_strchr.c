@@ -1,15 +1,27 @@
-char    *ft_strchr(char *str, int c)
-{
-    int i;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/23 16:37:23 by jteissie          #+#    #+#             */
+/*   Updated: 2024/03/23 16:38:06 by jteissie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    i = 0;
-    while (str[i])
-    {
-        if (str[i] == c)
-            return (&str[i]);
-        i++;
-    }
-    if (str[i] == c)
-	    return (&str[i]);
-    return (0);
+char	*ft_strchr(char *str, int c)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		if (str[i] == c)
+			return (&str[i]);
+		i++;
+	}
+	if (str[i] == c)
+		return (&str[i]);
+	return (0);
 }
