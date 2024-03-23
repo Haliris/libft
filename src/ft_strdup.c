@@ -1,4 +1,14 @@
-#include <stdlib.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/23 16:46:49 by jteissie          #+#    #+#             */
+/*   Updated: 2024/03/23 16:47:16 by jteissie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 static int	ft_strlen(const char *str)
 {
@@ -12,8 +22,8 @@ static int	ft_strlen(const char *str)
 
 char	*ft_strdup(const char *s)
 {
-	int	i;
-	int	s_len;
+	int		i;
+	int		s_len;
 	char	*dup;
 
 	i = 0;
