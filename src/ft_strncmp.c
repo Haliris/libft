@@ -1,13 +1,25 @@
-int    ft_strncmp(char *s1, char *s2, size_t n)
-{
-    int i;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/23 16:48:57 by jteissie          #+#    #+#             */
+/*   Updated: 2024/03/23 17:00:42 by jteissie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    i = 0;
-    while (i < n - 1 && (s1[i] || s2[i])) //n ou n-1 jsp
-    {
-        if (s1[i] != s2[i])
-            return (s1[i] - s2[i]);
-        i++;
-    }
-    return (s1[i] - s2[i]);
+int	ft_strncmp(char *s1, char *s2, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < n - 1 && (s1[i] || s2[i]))
+	{
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+		i++;
+	}
+	return (s1[i] - s2[i]);
 }
