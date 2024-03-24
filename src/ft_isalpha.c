@@ -6,13 +6,13 @@
 /*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 16:42:26 by jteissie          #+#    #+#             */
-/*   Updated: 2024/03/23 16:42:42 by jteissie         ###   ########.fr       */
+/*   Updated: 2024/03/24 18:15:55 by jteissie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
+		return (1024);
 	return (0);
 }
