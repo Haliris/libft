@@ -6,11 +6,11 @@
 /*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 17:36:02 by jteissie          #+#    #+#             */
-/*   Updated: 2024/03/23 17:36:34 by jteissie         ###   ########.fr       */
+/*   Updated: 2024/03/24 17:33:09 by jteissie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 
