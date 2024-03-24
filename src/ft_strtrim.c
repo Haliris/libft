@@ -6,19 +6,9 @@
 /*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 14:37:51 by jteissie          #+#    #+#             */
-/*   Updated: 2024/03/23 17:04:29 by jteissie         ###   ########.fr       */
+/*   Updated: 2024/03/24 17:30:04 by jteissie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-static size_t	ft_strlen(char const *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
 
 static int	ft_isset(char c, char const *set)
 {

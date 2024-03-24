@@ -6,19 +6,9 @@
 /*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 17:35:02 by jteissie          #+#    #+#             */
-/*   Updated: 2024/03/23 17:35:39 by jteissie         ###   ########.fr       */
+/*   Updated: 2024/03/24 17:24:10 by jteissie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-static int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

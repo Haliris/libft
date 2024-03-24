@@ -6,19 +6,9 @@
 /*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 18:36:04 by jteissie          #+#    #+#             */
-/*   Updated: 2024/03/23 16:26:41 by jteissie         ###   ########.fr       */
+/*   Updated: 2024/03/24 17:25:48 by jteissie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-static size_t	ft_strlen(char const *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
 
 char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 {

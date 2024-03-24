@@ -6,14 +6,14 @@
 /*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 16:44:33 by jteissie          #+#    #+#             */
-/*   Updated: 2024/03/23 16:44:46 by jteissie         ###   ########.fr       */
+/*   Updated: 2024/03/24 17:13:06 by jteissie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	int		i;
-	char	*str;
+	unsigned int		i;
+	char				*str;
 
 	i = 0;
 	str = s;
@@ -22,5 +22,5 @@ void	*ft_memset(void *s, int c, size_t n)
 		str[i] = c;
 		i++;
 	}
-	return (s);
+	return (str);
 }

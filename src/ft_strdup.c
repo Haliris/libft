@@ -6,19 +6,9 @@
 /*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 16:46:49 by jteissie          #+#    #+#             */
-/*   Updated: 2024/03/23 16:47:16 by jteissie         ###   ########.fr       */
+/*   Updated: 2024/03/24 17:23:36 by jteissie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-static int	ft_strlen(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
 
 char	*ft_strdup(const char *s)
 {

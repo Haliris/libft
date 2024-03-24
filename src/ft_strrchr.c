@@ -6,7 +6,7 @@
 /*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 16:40:16 by jteissie          #+#    #+#             */
-/*   Updated: 2024/03/23 16:40:28 by jteissie         ###   ########.fr       */
+/*   Updated: 2024/03/24 17:29:18 by jteissie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (i <= 0)
 	{
 		if (s[i] == c)
-			return (&s[i]);
+			return ((char *)&s[i]);
 		i--;
 	}
 	return (NULL);
