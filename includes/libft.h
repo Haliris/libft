@@ -6,7 +6,7 @@
 /*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 16:02:39 by jteissie          #+#    #+#             */
-/*   Updated: 2024/03/24 17:29:49 by jteissie         ###   ########.fr       */
+/*   Updated: 2024/03/24 17:32:05 by jteissie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void		*ft_memmove(void *dest, const void *src, size_t n);
 void		*ft_memset(void *s, int c, size_t n);
 char		**ft_split(char *s, char c);
 char		*ft_strjoin(char const *s1, char const *s2);
-size_t			ft_strlen(const char *str);
+size_t		ft_strlen(const char *str);
 size_t		ft_strlcat(char *dest, const char *src, size_t size);
 size_t		ft_strlcpy(char *dest, const char *src, size_t size);
 const char	*ft_strnstr(const char *haystack, const char *needle, size_t n);
