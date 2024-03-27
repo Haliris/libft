@@ -6,7 +6,7 @@
 /*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 17:14:10 by jteissie          #+#    #+#             */
-/*   Updated: 2024/03/23 17:34:07 by jteissie         ###   ########.fr       */
+/*   Updated: 2024/03/27 14:28:53 by jteissie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static int	count_words(char const *str, char sep)
 	return (words);
 }
 
-static char	*build_str(char *str, int index, int word_index)
+static char	*build_str(char const *str, int index, int word_index)
 {
 	char	*split_str;
 	int		i;
@@ -53,7 +53,7 @@ static char	*build_str(char *str, int index, int word_index)
 	return (split_str);
 }
 
-static char	**assemble(char **split, char *s, char c)
+static char	**assemble(char **split, char const *s, char c)
 {
 	int	i;
 	int	word_index;
@@ -81,7 +81,7 @@ static char	**assemble(char **split, char *s, char c)
 	return (split);
 }
 
-char	**ft_split(char *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**split;
 	int		words;

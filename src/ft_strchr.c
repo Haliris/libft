@@ -6,11 +6,11 @@
 /*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 16:37:23 by jteissie          #+#    #+#             */
-/*   Updated: 2024/03/24 17:23:07 by jteissie         ###   ########.fr       */
+/*   Updated: 2024/03/27 14:32:11 by jteissie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(char *str, int c)
+char	*ft_strchr(char const *str, int c)
 {
 	int	i;
 
@@ -18,10 +18,10 @@ char	*ft_strchr(char *str, int c)
 	while (str[i])
 	{
 		if (str[i] == c)
-			return (&str[i]);
+			return ((char *)&str[i]);
 		i++;
 	}
 	if (str[i] == c)
-		return (&str[i]);
+		return ((char *)&str[i]);
 	return (0);
 }
