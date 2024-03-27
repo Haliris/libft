@@ -6,15 +6,15 @@
 /*   By: jteissie <jteissie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 16:31:49 by jteissie          #+#    #+#             */
-/*   Updated: 2024/03/23 16:33:07 by jteissie         ###   ########.fr       */
+/*   Updated: 2024/03/24 18:14:58 by jteissie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalnum(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
+		return (8);
 	if (c >= '0' && c <= '9')
-		return (1);
+		return (8);
 	return (0);
 }
